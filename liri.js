@@ -21,5 +21,8 @@ function LiriApp(command, userInput) {
         case "spotify-this-song":
             spotifySong(userInput);
             break;
+        case "movie-this":
+            findMovie(userInput);
+            break;
     }
 }

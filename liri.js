@@ -24,5 +24,8 @@ function LiriApp(command, userInput) {
         case "movie-this":
             findMovie(userInput);
             break;
+        case "do-what-it-says":
+            randomOrder(userInput);
+            break;
     }
 }

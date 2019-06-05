@@ -90,3 +90,4 @@ axios.request(moviesQueryURL).then(function (response) {
         console.log("Country where the movie was produced: " + response.data.Country + "\n");
         console.log("Language of the movie: " + response.data.Language + "\n");
         console.log("Plot of the movie: " + response.data.Plot + "\n");
+        console.log("Actors in the movie: " + response.data.Actors + "\n");

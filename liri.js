@@ -101,3 +101,10 @@ axios.request(moviesQueryURL).then(function (response) {
             "Plot of the movie: " + response.data.Plot + "\n" +
             "Actors in the movie: " + response.data.Actors + "\n";
         
+            fs.appendFile("log.txt", movieTitle, function (err) {
+                if (err) {
+                    console.log(err);
+                }
+            });
+        });
+    }

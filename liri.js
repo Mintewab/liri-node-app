@@ -38,12 +38,13 @@ function spotifySong(songTitle) {
     spotify.search({ type:"track", query: songTitle }, function (err, data) {
         if (err) {
             return console.log('Error: ' + err);
-        }console.log("**********************************************************************");
+        }
+        console.log("**********************************************************************");
         console.log("Artist's Name: " + data.tracks.items[0].album.artists[0].name + "\n");
-        console.log("Song Name: " + data.tracks.items[0].name + "\n");        
-        console.log("Song link: " + data.tracks.items[0].href + "\n");        
+        console.log("Song Name: " + data.tracks.items[0].name + "\n");
+        console.log("Song link: " + data.tracks.items[0].href + "\n");
         console.log("Album:" + data.tracks.items[0].album.name + "\n");
-        
+
         var logSong = "\n**********************************************************************" + 
         "\nArtist's Name: " + data.tracks.items[0].album.artists[0].name + "\n" + 
         "Song Name: " + data.tracks.items[0].name + "\n"+
@@ -54,7 +55,7 @@ function spotifySong(songTitle) {
         });
     });
 };
-
+// LiriApp(command, userInput);
 function findConcert(singer) {
     var singer = userInput;
     var singerQueryURL = "https://rest.bandsintown.com/artists/" + singer + "/events?app_id=codingbootcamp";
@@ -72,25 +73,26 @@ function findConcert(singer) {
                 }
             });
         })
-    }
-    
-function findMovie(movie) { 
-    if(movie === ""){
-    movie = "Mr.Nobody";
-} 
-console.log("movie-this searching for " + movie.replace( " "));
+}
+function findMovie(movie) {
+        if(movie === ""){
+        movie = "Mr.Nobody";
+    } 
+    console.log("movie-this searching for " + movie.replace( " "));
 
-var moviesQueryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
-axios.request(moviesQueryURL).then(function (response) {
-    console.log("****************************************************************");
-    console.log("Title of the movie: " + response.data.Title + "\n");
-    console.log("years of the movie: " + response.data.Year + "\n");
-    console.log("IMDB Rating: " + response.data.imdbRating + "\n");
-    console.log("Rotten Tomatoes Rating of the movie: " + response.data.Ratings[1].Value + "\n");
+    var moviesQueryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
+    axios.request(moviesQueryURL).then(function (response) {
+        console.log("****************************************************************");
+        console.log("Title of the movie: " + response.data.Title + "\n");
+        console.log("years of the movie: " + response.data.Year + "\n");
+        console.log("IMDB Rating: " + response.data.imdbRating + "\n");
+        console.log("Rotten Tomatoes Rating of the movie: " + response.data.Ratings[1].Value + "\n");
         console.log("Country where the movie was produced: " + response.data.Country + "\n");
         console.log("Language of the movie: " + response.data.Language + "\n");
         console.log("Plot of the movie: " + response.data.Plot + "\n");
         console.log("Actors in the movie: " + response.data.Actors + "\n");
+
+
         var movieTitle = "******************'the movie list'*******************"+"\n\n"+
          "Title of the movie"+ response.data.Title + "\n\n" +
             "Year the movie came out: " + response.data.Year + "\n" +
@@ -101,12 +103,27 @@ axios.request(moviesQueryURL).then(function (response) {
             "Plot of the movie: " + response.data.Plot + "\n" +
             "Actors in the movie: " + response.data.Actors + "\n";
         
-            fs.appendFile("log.txt", movieTitle, function (err) {
-                if (err) {
-                    console.log(err);
-                }
-            });
+      
+        fs.appendFile("log.txt", movieTitle, function (err) {
+            if (err) {
+                console.log(err);
+            }
         });
-    }
-    
+    });
+}
 function randomOrder() {
+
+    fs.readFile("random.txt",'utf8',function(err, data){
+        if(err){
+            console.log(err);
+                    }else console.log(data);
+    
+    var dataArr = data.split(",")
+    LiriApp(dataArr[0],dataArr[1]);   
+   
+});
+     
+
+}
+
+LiriApp(command,userInput);

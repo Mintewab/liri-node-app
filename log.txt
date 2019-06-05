@@ -455,3 +455,26 @@ Artist's Name: Backstreet Boys
 Song Name: I Want It That Way
 Song link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
 Album:The Hits--Chapter One
+
+**********************************************************************
+Artist's Name: Post Malone
+Song Name: Stay
+Song link: https://api.spotify.com/v1/tracks/4H7WNRErSbONkM06blBoGc
+Album:beerbongs & bentleys
+
+**********************************************************************
+Artist's Name: R. Kelly
+Song Name: I Believe I Can Fly
+Song link: https://api.spotify.com/v1/tracks/2RzJwBCXsS1VnjDm2jKKAa
+Album:R.
+******************'the movie list'*******************
+
+Title of the movieMr. Nobody
+
+Year the movie came out: 2009
+IMDB Rating of the movie: 7.8
+Rotten Tomatoes Rating of the movie: 67%
+Country where the movie was produced: Belgium, Germany, Canada, France, USA, UK
+Language of the movie: English, Mohawk
+Plot of the movie: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors in the movie: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham

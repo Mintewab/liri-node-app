@@ -7,3 +7,8 @@ var Spotify = require("node-spotify-api");
 var fs = require("fs");
 var spotify = new Spotify(keys.spotify)
 
+var args = process.argv;
+
+var command = process.argv[2];
+
+var userInput = process.argv.splice(3).join(",");

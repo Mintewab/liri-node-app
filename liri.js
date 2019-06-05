@@ -79,3 +79,5 @@ function findMovie(movie) {
     movie = "Mr.Nobody";
 } 
 console.log("movie-this searching for " + movie.replace( " "));
+
+var moviesQueryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";

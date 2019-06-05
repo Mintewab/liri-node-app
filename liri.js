@@ -89,3 +89,4 @@ axios.request(moviesQueryURL).then(function (response) {
     console.log("Rotten Tomatoes Rating of the movie: " + response.data.Ratings[1].Value + "\n");
         console.log("Country where the movie was produced: " + response.data.Country + "\n");
         console.log("Language of the movie: " + response.data.Language + "\n");
+        console.log("Plot of the movie: " + response.data.Plot + "\n");

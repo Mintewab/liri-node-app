@@ -62,3 +62,4 @@ function findConcert(singer) {
         function (response) {
             console.log("**********************************************************************")
             console.log("Name of the venue: " + response.data[0].venue.name + "\n");
+            console.log("Venue Location: " + response.data[0].venue.city + "\n");

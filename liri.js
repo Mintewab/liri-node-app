@@ -87,3 +87,4 @@ axios.request(moviesQueryURL).then(function (response) {
     console.log("years of the movie: " + response.data.Year + "\n");
     console.log("IMDB Rating: " + response.data.imdbRating + "\n");
     console.log("Rotten Tomatoes Rating of the movie: " + response.data.Ratings[1].Value + "\n");
+        console.log("Country where the movie was produced: " + response.data.Country + "\n");

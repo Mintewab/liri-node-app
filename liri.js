@@ -38,4 +38,5 @@ function spotifySong(songTitle) {
     spotify.search({ type:"track", query: songTitle }, function (err, data) {
         if (err) {
             return console.log('Error: ' + err);
-        }
+        }console.log("**********************************************************************");
+        console.log("Artist's Name: " + data.tracks.items[0].album.artists[0].name + "\n");

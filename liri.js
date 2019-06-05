@@ -61,3 +61,4 @@ function findConcert(singer) {
     axios.get(singerQueryURL).then(
         function (response) {
             console.log("**********************************************************************")
+            console.log("Name of the venue: " + response.data[0].venue.name + "\n");

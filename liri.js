@@ -15,5 +15,7 @@ var userInput = process.argv.splice(3).join(",");
 
 function LiriApp(command, userInput) {
     switch (command) {
-       
+        case "concert-this":
+            findConcert(userInput);
+            break;
 }

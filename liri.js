@@ -58,3 +58,6 @@ function spotifySong(songTitle) {
 function findConcert(singer) {
     var singer = userInput;
     var singerQueryURL = "https://rest.bandsintown.com/artists/" + singer + "/events?app_id=codingbootcamp";
+    axios.get(singerQueryURL).then(
+        function (response) {
+            console.log("**********************************************************************")

@@ -33,3 +33,9 @@ function spotifySong(songTitle) {
     if(songTitle === ""){
         songTitle = "Stay";
     } 
+    console.log("song-this searching for " + songTitle.replace( " "));
+    
+    spotify.search({ type:"track", query: songTitle }, function (err, data) {
+        if (err) {
+            return console.log('Error: ' + err);
+        }

@@ -18,4 +18,8 @@ function LiriApp(command, userInput) {
         case "concert-this":
             findConcert(userInput);
             break;
+        case "spotify-this-song":
+            spotifySong(userInput);
+            break;
+    }
 }

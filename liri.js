@@ -41,4 +41,5 @@ function spotifySong(songTitle) {
         }console.log("**********************************************************************");
         console.log("Artist's Name: " + data.tracks.items[0].album.artists[0].name + "\n");
         console.log("Song Name: " + data.tracks.items[0].name + "\n");        
-        console.log("Song link: " + data.tracks.items[0].href + "\n");
+        console.log("Song link: " + data.tracks.items[0].href + "\n");        
+        console.log("Album:" + data.tracks.items[0].album.name + "\n");

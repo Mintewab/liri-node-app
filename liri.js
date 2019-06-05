@@ -64,3 +64,11 @@ function findConcert(singer) {
             console.log("Name of the venue: " + response.data[0].venue.name + "\n");
             console.log("Venue Location: " + response.data[0].venue.city + "\n");
             console.log("Date of event: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n");
+            var concert = "******************the concert by the band************" + "\nName of the singer: " + singer + "\nName of the venue: " + response.data[0].venue.name + "\n"
+                + "Venue Location: " + response.data[0].venue.city + "\n" + "date of event:" + moment(response.data[0].datetime).format("MM-DD-YYY") + "\n";
+            fs.appendFile("log.txt", concert, function (err) {
+                if (err) {
+                    console.log(err);
+                }
+            });
+        })

@@ -40,3 +40,4 @@ function spotifySong(songTitle) {
             return console.log('Error: ' + err);
         }console.log("**********************************************************************");
         console.log("Artist's Name: " + data.tracks.items[0].album.artists[0].name + "\n");
+        console.log("Song Name: " + data.tracks.items[0].name + "\n");

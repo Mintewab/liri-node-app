@@ -81,3 +81,5 @@ function findMovie(movie) {
 console.log("movie-this searching for " + movie.replace( " "));
 
 var moviesQueryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
+axios.request(moviesQueryURL).then(function (response) {
+    console.log("****************************************************************");

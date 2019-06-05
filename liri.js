@@ -74,4 +74,8 @@ function findConcert(singer) {
         })
     }
     
-function findMovie(movie) {
+function findMovie(movie) { 
+    if(movie === ""){
+    movie = "Mr.Nobody";
+} 
+console.log("movie-this searching for " + movie.replace( " "));

@@ -54,3 +54,5 @@ function spotifySong(songTitle) {
         });
     });
 };
+
+function findConcert(singer) {

@@ -43,3 +43,14 @@ function spotifySong(songTitle) {
         console.log("Song Name: " + data.tracks.items[0].name + "\n");        
         console.log("Song link: " + data.tracks.items[0].href + "\n");        
         console.log("Album:" + data.tracks.items[0].album.name + "\n");
+        
+        var logSong = "\n**********************************************************************" + 
+        "\nArtist's Name: " + data.tracks.items[0].album.artists[0].name + "\n" + 
+        "Song Name: " + data.tracks.items[0].name + "\n"+
+         "Song link: " + data.tracks.items[0].href + "\n" +
+          "Album:" + data.tracks.items[0].album.name + "\n";
+        fs.appendFile("log.txt", logSong, function (err) {
+            if (err) throw err;
+        });
+    });
+};

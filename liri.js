@@ -84,3 +84,6 @@ var moviesQueryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
 axios.request(moviesQueryURL).then(function (response) {
     console.log("****************************************************************");
     console.log("Title of the movie: " + response.data.Title + "\n");
+    console.log("years of the movie: " + response.data.Year + "\n");
+    console.log("IMDB Rating: " + response.data.imdbRating + "\n");
+    console.log("Rotten Tomatoes Rating of the movie: " + response.data.Ratings[1].Value + "\n");

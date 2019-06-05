@@ -478,3 +478,50 @@ Country where the movie was produced: Belgium, Germany, Canada, France, USA, UK
 Language of the movie: English, Mohawk
 Plot of the movie: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
 Actors in the movie: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+******************'the movie list'*******************
+
+Title of the movieWrong Turn
+
+Year the movie came out: 2003
+IMDB Rating of the movie: 6.1
+Rotten Tomatoes Rating of the movie: 40%
+Country where the movie was produced: USA, Germany
+Language of the movie: English
+Plot of the movie: Six people find themselves trapped in the woods of West Virginia, hunted down by "cannibalistic mountain men grossly disfigured through generations of in-breeding."
+Actors in the movie: Desmond Harrington, Eliza Dushku, Emmanuelle Chriqui, Jeremy Sisto
+
+**********************************************************************
+Artist's Name: Backstreet Boys
+Song Name: I Want It That Way
+Song link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
+Album:The Hits--Chapter One
+
+**********************************************************************
+Artist's Name: Backstreet Boys
+Song Name: I Want It That Way
+Song link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
+Album:The Hits--Chapter One
+
+**********************************************************************
+Artist's Name: TobyMac
+Song Name: Lights Shine Bright
+Song link: https://api.spotify.com/v1/tracks/36g3CdSXU0vBSOW4P1dtsZ
+Album:This Is Not A Test
+
+**********************************************************************
+Artist's Name: Julie Anna
+Song Name: Shine Bright Like a Diamond
+Song link: https://api.spotify.com/v1/tracks/3MoqCVYKdJHNNMUI2SSJPb
+Album:Shine Bright Like a Diamond
+
+**********************************************************************
+Artist's Name: Neil Diamond
+Song Name: Sweet Caroline
+Song link: https://api.spotify.com/v1/tracks/62AuGbAkt8Ox2IrFFb8GKV
+Album:Sweet Caroline
+
+**********************************************************************
+Artist's Name: Zac Brown Band
+Song Name: Loving You Easy
+Song link: https://api.spotify.com/v1/tracks/69XcvSymPaTke2Qb6f3W6P
+Album:JEKYLL + HYDE

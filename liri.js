@@ -91,3 +91,13 @@ axios.request(moviesQueryURL).then(function (response) {
         console.log("Language of the movie: " + response.data.Language + "\n");
         console.log("Plot of the movie: " + response.data.Plot + "\n");
         console.log("Actors in the movie: " + response.data.Actors + "\n");
+        var movieTitle = "******************'the movie list'*******************"+"\n\n"+
+         "Title of the movie"+ response.data.Title + "\n\n" +
+            "Year the movie came out: " + response.data.Year + "\n" +
+            "IMDB Rating of the movie: " + response.data.imdbRating + "\n" +
+            "Rotten Tomatoes Rating of the movie: " + response.data.Ratings[1].Value + "\n" +
+            "Country where the movie was produced: " + response.data.Country + "\n" +
+            "Language of the movie: " + response.data.Language + "\n" +
+            "Plot of the movie: " + response.data.Plot + "\n" +
+            "Actors in the movie: " + response.data.Actors + "\n";
+        

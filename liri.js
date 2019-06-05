@@ -83,3 +83,4 @@ console.log("movie-this searching for " + movie.replace( " "));
 var moviesQueryURL = "http://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
 axios.request(moviesQueryURL).then(function (response) {
     console.log("****************************************************************");
+    console.log("Title of the movie: " + response.data.Title + "\n");

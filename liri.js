@@ -29,3 +29,7 @@ function LiriApp(command, userInput) {
             break;
     }
 }
+function spotifySong(songTitle) {
+    if(songTitle === ""){
+        songTitle = "Stay";
+    } 
